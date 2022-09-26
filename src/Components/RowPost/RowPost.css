@@ -1,0 +1,47 @@
+.row{
+    margin-left: 10px;
+    color: #fff;
+    margin-top: -6rem;
+    margin-bottom: 7rem;
+}
+@media screen and (max-width: 1000px) {
+    .row{
+     margin-left: 4px;
+     margin-top: -6rem;
+     margin-bottom: 7rem;
+    }
+ }
+
+.posters{
+    display: flex;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    margin-right: 1rem;
+    
+}
+
+.posters::-webkit-scrollbar{
+    display: none;
+}
+
+.poster{
+    max-height: 203px;
+    margin-left: 10px;
+    width: 250px;
+    transition-duration: .4s;
+    cursor: pointer;
+    
+}
+.poster:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width: 1000px) {
+    .poster {
+        max-height: 203px;
+        margin-right: 10px;
+        max-width: 50px;
+    }
+    }
+
